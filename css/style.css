@@ -29,6 +29,8 @@ h1 {
 /* Navigation styles */
 nav ul {
     list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
 
@@ -60,15 +62,13 @@ section {
 table {
     width: 100%;
     margin-top: 10px;
-}
-
-table, th, td {
-    border: 1px solid #ffa4a4;
+    border: 1px solid #4638ff;
 }
 
 th, td {
-    padding: 8px;
+    padding: 10px;
     text-align: left;
+    border: 1px solid #4638ff;
 }
 
 img {
@@ -81,11 +81,8 @@ aside {
     background-color: #b89898;
     padding: 15px;
     border-radius: 5px;
-}
-
-footer {
-    margin-top: 20px;
     text-align: center;
+    list-style: none;
 }
 
 aside a {
@@ -95,6 +92,11 @@ aside a {
 aside a:hover {
     text-decoration: underline;
     color: #004080;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
 }
 
 #introduction {
